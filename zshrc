@@ -54,10 +54,10 @@ setopt prompt_subst
 #%# '
 
 PROMPT='%{%f%k%b%}
-%{%K{black}%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%K{black}%}%~%{%B%F{green}%}%E%{%f%k%b%}
-%{%K{black}%}%{%K{black}%} %#%{%f%k%b%} '
+%{%K{black}%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%K{black}%}%~%{%B%F{green}%}${vcs_info_msg_0_} %E%{%f%k%b%}
+%{%K{black}%} %{%K{black}%} %#%{%f%k%b%} '
 
-RPROMPT='!%{%B%F{cyan}%}%!%{%f%k%b%}'
+RPROMPT='!%{%B%F{cyan}%}%?%{%f%k%b%}'
 
 #JAVA_HOME=/opt/java6
 #export JAVA_HOME
