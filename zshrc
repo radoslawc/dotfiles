@@ -50,14 +50,12 @@ precmd() {
 
 setopt prompt_subst
 
-#PROMPT=$'\e[0;31m%d \e[0m  
-#%# '
 
-PROMPT='%{%f%k%b%}
-%{%K{black}%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%K{black}%}%~%{%B%F{green}%}${vcs_info_msg_0_} %E%{%f%k%b%}
-%{%K{black}%} %{%K{black}%} %#%{%f%k%b%} '
+PROMPT='
+%{%F{yellow}%K{black}%}%d%{%F{green}%}% ${vcs_info_msg_0_} %E%{%f%k%b%}
+%{%K{black}%}  %#%{%f%k%b%} '
 
-RPROMPT='!%{%B%F{cyan}%}%?%{%f%k%b%}'
+RPROMPT='?%{%B%F{red}%}%?%{%f%k%b%}'
 
 #JAVA_HOME=/opt/java6
 #export JAVA_HOME
