@@ -42,8 +42,23 @@ alias t="tree"
 alias p="print -l"
 
 
-PROMPT='-> %d
-%# '
+####vcs
+autoload -U vcs_info
+zstyle ':vcs_info:*' enable git svn
+precmd() {
+    vcs_info
+}
+
+setopt prompt_subst
+
+#PROMPT=$'\e[0;31m%d \e[0m  
+#%# '
+
+PROMPT='%{%f%k%b%}
+%{%K{black}%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%K{black}%}%~%{%B%F{green}%}%E%{%f%k%b%}
+%{%K{black}%}%{%K{black}%} %#%{%f%k%b%} '
+
+RPROMPT='!%{%B%F{cyan}%}%!%{%f%k%b%}'
 
 # End of lines added by compinstall
 JAVA_HOME=/opt/java6
