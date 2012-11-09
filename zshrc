@@ -1,4 +1,3 @@
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
@@ -60,7 +59,6 @@ PROMPT='%{%f%k%b%}
 
 RPROMPT='!%{%B%F{cyan}%}%!%{%f%k%b%}'
 
-# End of lines added by compinstall
-JAVA_HOME=/opt/java6
-export JAVA_HOME
-PATH=$PATH:/opt/java6/bin
+#JAVA_HOME=/opt/java6
+#export JAVA_HOME
+#PATH=$PATH:/opt/java6/bin
