@@ -1,0 +1,11 @@
+background no
+out_to_x no
+out_to_console yes
+update_interval 1
+total_run_times 0
+use_spacer none
+
+TEXT
+^fg(\#6d6d6d)CPU: ^fg(\#dadada)${cpu}% ^fg(\#6d6d6d)RAM: ^fg(\#dadada)${mem} ^fg(\#6d6d6d)eth1: ^fg(\#dadada)${downspeed eth1} ^fg(\#6d6d6d)Date: ^fg(\#dadada)${time %a %d-%m-%Y} ^fg(\#6d6d6d)Time: ^fg(\#dadada)${time %r} 
+
+
