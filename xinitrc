@@ -1,9 +1,11 @@
 xrdb -load .Xresources &
-
+sleep 3
 /home/racm/.screenlayout/a.sh &
+sleep 3 
 
-xset b off
-(sleep 4s && conky | dzen2 -x '2157' -e '' -fg '#dcdcdc' -bg '#1d1d1d' -w '650' -ta c  -p -fn "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*" ) &
-ck-launch-session /home/racm/dwm_dev/dwm-6.0/dwm 
+xset b off &
+setxkbmap -layout "pl" -option "ctrl:nocaps" &
 
+/home/racm/dwm_dev/dwm-status &
+exec /home/racm/dwm_dev/dwm
 
