@@ -39,7 +39,9 @@ zsh-mime-setup
 alias l="ls -lha --color=always"
 alias t="tree"
 alias p="print -l"
-
+alias -g ND='*(/om[1])' # newest directory
+alias -g NF='*(.om[1])' # newest file
+alias ll="ls *(/)"
 
 ####vcs
 autoload -U vcs_info
