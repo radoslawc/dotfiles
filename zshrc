@@ -42,7 +42,7 @@ alias p="print -l"
 alias -g ND='*(/om[1])' # newest directory
 alias -g NF='*(.om[1])' # newest file
 alias ll="ls *(/)"
-
+alias v="vim"
 ####vcs
 autoload -U vcs_info
 zstyle ':vcs_info:*' enable git svn
