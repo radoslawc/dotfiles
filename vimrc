@@ -4,7 +4,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-
 set nocompatible
 set autoindent
 set laststatus=2
@@ -16,4 +15,7 @@ set cursorline
 set cmdheight=2
 set showtabline=2
 set shell=zsh
+set nowrap
+set wildmenu
+:set t_Co=256
 
