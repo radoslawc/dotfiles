@@ -42,7 +42,7 @@ autoload -U zsh-mime-setup
 zsh-mime-setup
 #alias
 
-alias l="ls -lha --color=always"
+alias l="ls -lh --color=always --group-directories-first"
 alias t="tree"
 alias p="print -l"
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
@@ -58,7 +58,8 @@ function mcd() {
 	mkdir -p "$1" && cd "$1";
 }
 
-
+LS_COLORS='di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+export LS_COLORS
 ####
 
 
