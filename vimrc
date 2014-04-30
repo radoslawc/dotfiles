@@ -12,6 +12,7 @@ set incsearch
 set hlsearch
 set ignorecase smartcase
 set cursorline
+set cursorcolumn
 set cmdheight=2
 set showtabline=2
 set shell=zsh

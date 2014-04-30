@@ -2,8 +2,8 @@ application/x-java-jnlp-file;/opt/java6/jre/bin/javaws %s
 application/java-archive;/opt/java6/jre/bin/java -jar %s
 
 audio/*;mplayer %s
-image/*;display %s
-text/*;vim %s
+image/*;feh %s
+text/*;less %s
 video/*;mplayer %s
 application/pdf;evince %s
 
